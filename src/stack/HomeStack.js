@@ -16,6 +16,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/Home.js';
+import FB from '../screens/FB.js'
 
 const Stack = createStackNavigator();
 
@@ -44,6 +45,18 @@ export default function HomeStack() {
                     )
                 }}
             />
+
+            <Stack.Screen
+                name="FB"
+                component={FB}
+                options={{
+                    headerStyle: {
+                        backgroundColor: '#349beb',
+                        shadowColor: 'transparent',
+                    },
+                    headerTitle: 'Pagina de Facebook'
+               }}
+            />
         </Stack.Navigator>
     </NavigationContainer>
 
@@ -54,7 +67,7 @@ const styles = StyleSheet.create({
 
     logo_image: {
 
-        marginTop: 170,
+        marginTop: 250,
         height: 180,
         width: 180,
         borderRadius: 25
