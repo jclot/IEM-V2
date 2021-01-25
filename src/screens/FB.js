@@ -13,18 +13,27 @@
     ScrollView,
 } from 'react-native';
  import { Ionicons } from '@expo/vector-icons';
-
+ import { WebView } from 'react-native-webview';
 
 export default function FB() {
 
     return(
 
-        <View>
-            <Text> Hola Como Esta Me cagi EN la as </Text>
-        </View>
-
+            <WebView style={styles.fst_view}
+                     startInLoadingState={true}
+                     source={{ uri: 'https://es-la.facebook.com/IEM.Bilingual.School' }}
+            />
 
     )
-
-
 }
+
+const styles = StyleSheet.create({
+
+    fst_view: {
+
+    backgroundColor: '#349beb'
+
+    }
+
+
+})
