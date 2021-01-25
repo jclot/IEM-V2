@@ -14,7 +14,6 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-
 export default function Home({ navigation }) {
 
     const [modalVisible, setModalVisible] = React.useState(false);
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
 
     buttons_group: {
         alignSelf: 'center',
-        marginTop: 200
+        marginTop: 225
     },
 
     bg_color_sv: {
