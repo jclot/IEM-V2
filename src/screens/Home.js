@@ -24,7 +24,7 @@ export default function Home({ navigation }) {
 
         <View style={styles.buttons_group}>
             <View style={styles.buttons_position}>
-               <TouchableOpacity style={styles.buttons_style} onLongPress={() => setModalVisible(!modalVisible) }>
+               <TouchableOpacity style={styles.buttons_style} onPress={() => navigation.navigate('Calendars')}>
                     <Ionicons name="calendar" size={34} color="#e3e156" />
                 </TouchableOpacity>
 
