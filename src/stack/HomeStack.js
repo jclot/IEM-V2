@@ -15,8 +15,10 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
 import Home from '../screens/Home.js';
 import FB from '../screens/FB.js'
+import Calendars from '../screens/Calendar.js';
 
 const Stack = createStackNavigator();
 
@@ -55,6 +57,19 @@ export default function HomeStack() {
                         shadowColor: 'transparent',
                     },
                     headerTitle: 'Pagina de Facebook'
+               }}
+            />
+
+            <Stack.Screen
+                name="Calendars"
+                component={Calendars}
+                options={{
+                    headerStyle: {
+                        backgroundColor: '#349beb',
+                        shadowColor: 'transparent',
+                    },
+                    headerTitle: 'Calendario 2021',
+                    headerTintColor: '#0034b8'
                }}
             />
         </Stack.Navigator>
