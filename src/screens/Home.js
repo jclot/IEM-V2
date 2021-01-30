@@ -24,15 +24,11 @@ export default function Home({ navigation }) {
 
         <View style={styles.buttons_group}>
             <View style={styles.buttons_position}>
-               <TouchableOpacity style={styles.buttons_style} onPress={() => navigation.navigate('Calendars')}>
+               <TouchableOpacity style={styles.buttons_style} onPress={() => navigation.navigate('AreYouNew')}>
                     <Ionicons name="calendar" size={34} color="#e3e156" />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttons_style} onPress={() => navigation.navigate('FB')}>
-                    <Ionicons name="logo-facebook" size={34} color="#e3e156" />
-                </TouchableOpacity>
-
-                <TouchableOpacity style={styles.buttons_style}>
+                 <TouchableOpacity style={styles.buttons_style}>
                     <Ionicons name="ios-information-circle-sharp" size={38} color="#e3e156" />
                 </TouchableOpacity>
 
