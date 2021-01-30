@@ -19,6 +19,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/Home.js';
 import FB from '../screens/FB.js'
 import Calendars from '../screens/Calendar.js';
+import NewInApp from '../screens/NewInApp.js';
 
 const Stack = createStackNavigator();
 
@@ -53,7 +54,7 @@ export default function HomeStack() {
                 component={FB}
                 options={{
                     headerStyle: {
-                        backgroundColor: '#349beb',
+                        backgroundColor: '#fff',
                         shadowColor: 'transparent',
                     },
                     headerTitle: 'Pagina de Facebook'
@@ -69,8 +70,21 @@ export default function HomeStack() {
                         shadowColor: 'transparent',
                     },
                     headerTitle: 'Calendario 2021',
-                    headerTintColor: '#0034b8'
+                    headerTintColor: '#fff'
                }}
+            />
+
+            <Stack.Screen
+                name="AreYouNew"
+                component={NewInApp}
+                options={{
+                    headerStyle: {
+                        backgroundColor: '#349beb',
+                        shadowColor: 'transparent',
+                    },
+                    headerTitle: 'Eres Nuevo a la plataforma?',
+                    headerTintColor: '#fff'
+                }}
             />
         </Stack.Navigator>
     </NavigationContainer>
