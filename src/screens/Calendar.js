@@ -32,7 +32,7 @@ export default function Calendars() {
             backgroundColor: '#349beb',
             calendarBackground: '#349beb',
             todayTextColor: '#e3e156',
-            monthTextColor: '#e3e156',
+            monthTextColor: '#fff',
             dayTextColor: '#fff'
         }}
         style={{
